@@ -8,7 +8,7 @@ Allows easy performance testing of socket logic without actually making thousand
 
 Mocket = require("resty.mocket")
 
-local sock = Mocket("tcp")
+local sock = Mocket:new("tcp")
 
 timer:start()
 for i=1,10000 do
